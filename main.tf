@@ -8,7 +8,7 @@ resource "aws_instance" "one" {
 ami = "ami-0187337106779cdf8"
 instance_type = "t2.medium"
    key_name = "terra-key"
-   vpc_security_group_ids = [aws_security_group.three.id]
+   vpc_security_group_ids = [aws_security_group.bar.id]
    availability_zone = "ap-south-1"
    user_data = <<EOF
 #!/bin/bash
