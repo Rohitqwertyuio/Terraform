@@ -24,7 +24,7 @@ Name = "Zomato-1"
 }
 
 resource "aws_instance" "two" {
-ami = "ami-0e670eb768a5fc3d4"
+ami = "ami-0187337106779cdf8"
 instance_type = "t2.micro"
    key_name = "terra-key"
    vpc_security_group_ids = [aws_security_group.three.id]
