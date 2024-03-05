@@ -27,7 +27,7 @@ resource "aws_instance" "two" {
 ami = "ami-0187337106779cdf8"
 instance_type = "t2.micro"
    key_name = "terra-key"
-   vpc_security_group_ids = [aws_security_group.three.id]
+   vpc_security_group_ids = [aws_security_group.bar.id]
    availability_zone = "ap-northeast-3"
    user_data = <<EOF
 #!/bin/bash
